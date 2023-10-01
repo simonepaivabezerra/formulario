@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="estilo.css"media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="Nome"id="nome" required>
+            </div>
+
+            <div class="campo">
+            <label for="Sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="Sobrenome" id="Sobrenome" required>
+
+     </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label><strong> De qual lado da aplicação você desenvolve?</strong>
+            <label>
+                <input type="radio" name="devweb" volue="frontend" checked> front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend"> Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack"> fullstack
+            </label>
+        </div>
+        <div class="campo">
+        <label for="Senioridade"><strong>Senioridade</strong></label>
+        <select id="Senioridade">
+        <option selected disoblrd  value="">Selecione</option>
+        <option>Junior</option>
+        <option>Pleno</option>
+        <option>Senior</option>
+    </select>
+    </div>
+    <fieldset class="grupo">
+        <div id="checkbox">
+            <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1"  name="tecnologia1"  value="HTML">
+            <label for="tecnologia1">HTML</label>
+            <input type="checkbox" id="tecnologia2"name ="tecnologia2" value="CSS">
+            <label for="tecnologia2">css</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+            <label for="tecnologia3">Javascript</label>
+            <input type="checkbox"id="tecnologia4" name="tecnologia4"value="PHP">
+            <label for="tecnologia4">PHP</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+            <label for="tecnologia5">C#</label>
+            <input type="checkbox"id="tecnologia6" name="tecnologia6" value="python">
+            <label for="tecnologia6">python</label>
+            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="java">
+            <label for="tecnologia7">java</label>
+         </div>
+    </fieldset>
+    <div class="campo">
+        <label><Strong>Conte um pouco da sua experiênci:</Strong></label> 
+
+        <textarea row="6" style="width: 26em" id="experiência" name="experiência"></textarea>
+    </div>
+    <button class="botao" type="submit">Concluído</button>
+
+    </form>
+    <br><br><br>
+    <p>"Ola! me chamo Simone Paiva,desenvolvi este site somente para fins didáticos de aprendizado e treinamento para o Elas na Tech."</p>
+    <br><br>
+</body>
+</html>
